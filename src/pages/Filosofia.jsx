@@ -1,9 +1,67 @@
-import React from 'react'
+import React from 'react';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 function Filosofia() {
+  const pageStyle = {
+    display: "flex",
+    flexDirection: "column",
+    minHeight: "100vh",
+    backgroundColor: "#f8f6f6", // El mismo gris de tu Inicio
+  };
+
+  const mainStyle = {
+    flex: 1,
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    paddingLeft: "25%", // El mismo margen izquierdo de tu Inicio
+    paddingTop: "200px", // Misma altura para que no "salte" al cambiar de página
+    paddingBottom: "100px",
+    fontFamily: "'Inter', sans-serif", // Misma tipografía
+  };
+
+  const titleStyle = {
+    fontSize: "4rem", // Mismo tamaño que tu "El arte de la paciencia"
+    color: "#1a2a1a",
+    margin: 0,
+    fontFamily: "'Inter', sans-serif",
+    lineHeight: "1.1"
+  };
+
+  const textContainerStyle = {
+    maxWidth: "700px", // Un poco más ancho que el de inicio para los párrafos
+    color: "#4a5d4a",
+    marginTop: "40px",
+    fontSize: "18px",
+    textAlign: "align", // Texto justificado como pediste
+    lineHeight: "1.6"
+  };
+
   return (
-    <div>Filosofia</div>
-  )
+    <div style={pageStyle}>
+      <Header />
+
+      <main style={mainStyle}>
+        <h1 style={titleStyle}>
+          Menos es más
+        </h1>
+
+        <div style={textContainerStyle}>
+          <p style={{ marginBottom: "20px" }}>
+          Nuestra filosofía se centra en la observación y el respeto por los ritmos naturales. Creemos que cultivar un Bonsái no es solo jardinería, sino una meditación activa.
+          </p>
+
+          <p style={{ marginBottom: "20px" }}>
+          En nuestro estudio, te enseñamos a escuchar al árbol, entendiendo que cada corte y cada alambrado debe tener un propósito. Buscamos el equilibrio perfecto entre la intervención humana y la expresión salvaje de la naturaleza.
+          </p>
+
+        </div>
+      </main>
+
+      <Footer />
+    </div>
+  );
 }
 
-export default Filosofia
+export default Filosofia;

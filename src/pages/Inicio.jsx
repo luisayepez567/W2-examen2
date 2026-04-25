@@ -8,7 +8,7 @@ function Inicio() {
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    backgroundColor: "#efefef",
+    backgroundColor: "#f8f6f6",
   };
 
   const mainStyle = {
