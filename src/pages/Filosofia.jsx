@@ -7,7 +7,7 @@ function Filosofia() {
     display: "flex",
     flexDirection: "column",
     minHeight: "100vh",
-    backgroundColor: "#f8f6f6", // El mismo gris de tu Inicio
+    backgroundColor: "#f8f6f6", 
   };
 
   const mainStyle = {
@@ -15,14 +15,14 @@ function Filosofia() {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    paddingLeft: "25%", // El mismo margen izquierdo de tu Inicio
-    paddingTop: "200px", // Misma altura para que no "salte" al cambiar de página
+    paddingLeft: "25%", 
+    paddingTop: "200px", 
     paddingBottom: "100px",
-    fontFamily: "'Inter', sans-serif", // Misma tipografía
+    fontFamily: "'Inter', sans-serif",
   };
 
   const titleStyle = {
-    fontSize: "4rem", // Mismo tamaño que tu "El arte de la paciencia"
+    fontSize: "4rem", 
     color: "#1a2a1a",
     margin: 0,
     fontFamily: "'Inter', sans-serif",
@@ -30,11 +30,11 @@ function Filosofia() {
   };
 
   const textContainerStyle = {
-    maxWidth: "700px", // Un poco más ancho que el de inicio para los párrafos
+    maxWidth: "700px", 
     color: "#4a5d4a",
     marginTop: "40px",
     fontSize: "18px",
-    textAlign: "align", // Texto justificado como pediste
+    textAlign: "align", 
     lineHeight: "1.6"
   };
 
